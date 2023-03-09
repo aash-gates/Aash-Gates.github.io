@@ -1,5 +1,15 @@
 @font-face {
-   font-family: 'ARIALNBI';
+   font-family: 'Ubuntu-BI';
    font-display: swap;
-   src: url('ARIALNBI/font.TTF');
+   src: url('Ubuntu-BI/font.ttf');
+}
+@font-face {
+   font-family: 'bahnschrift';
+   font-display: swap;
+   src: url('bahnschrift/font.ttf');
+}
+@font-face {
+   font-family: 'SEGOEUI';
+   font-display: swap;
+   src: url('SEGOEUI/font.TTF');
 }
