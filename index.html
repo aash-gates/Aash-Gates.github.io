@@ -1,68 +1,446 @@
-<!DOCTYPE html>
-<html  >
+<!doctype html>
+<html lang="en">
 <head>
-  <!-- Site made with Mobirise Website Builder v4.12.4, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.12.4, mobirise.com">
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image:src" content="assets/images/index-meta.png">
-  <meta property="og:image" content="assets/images/index-meta.png">
-  <meta name="twitter:title" content="Aash Gates">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/my-project-128x128.png" type="image/x-icon">
-  <meta name="description" content="Welcome to the Official Website of that CSE Diploma Boy">
-  
-  
-  <title>Aash Gates</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/web/assets/gdpr-plugin/gdpr-styles.css">
-  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link href="assets/fonts/style.css" rel="stylesheet">
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aash Gates • Redirecting</title>
+  <meta name="description" content="Redirecting you to aashgates.com" />
+
+  <!-- Auto Redirect (4 seconds) -->
+  <meta http-equiv="refresh" content="4; url=https://www.aashgates.com">
+
+  <style>
+    :root{
+      --bg1:#071a2a;
+      --bg2:#0a2f3f;
+      --glass: rgba(255,255,255,.10);
+      --glass2: rgba(255,255,255,.06);
+      --line: rgba(255,255,255,.22);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+      --accent1: rgba(0, 255, 214, .55);
+      --accent2: rgba(76, 161, 255, .55);
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      color:var(--text);
+      overflow:hidden;
+      background:
+        radial-gradient(1000px 700px at 15% 20%, rgba(0,255,214,.18), transparent 60%),
+        radial-gradient(900px 700px at 85% 25%, rgba(76,161,255,.20), transparent 62%),
+        radial-gradient(800px 600px at 50% 90%, rgba(255,255,255,.08), transparent 60%),
+        linear-gradient(135deg, var(--bg1), var(--bg2));
+    }
+
+    .streaks{
+      position:fixed; inset:-20%;
+      background:
+        linear-gradient(115deg, transparent 0 35%, rgba(255,255,255,.08) 45%, transparent 55%),
+        linear-gradient(115deg, transparent 0 55%, rgba(255,255,255,.05) 65%, transparent 75%);
+      transform: rotate(-6deg);
+      filter: blur(1px);
+      opacity:.55;
+      pointer-events:none;
+      animation: drift 12s ease-in-out infinite alternate;
+    }
+    @keyframes drift{
+      from{ transform: rotate(-6deg) translate3d(-2%, -1%, 0); }
+      to{ transform: rotate(-6deg) translate3d(2%, 1%, 0); }
+    }
+
+    #bubbles{
+      position:fixed; inset:0;
+      z-index:0;
+    }
+
+    .wrap{
+      position:relative;
+      z-index:2;
+      height:100%;
+      display:grid;
+      place-items:center;
+      padding:20px;
+    }
+
+    .card{
+      width:min(780px, 100%);
+      border-radius:22px;
+      background: linear-gradient(180deg, var(--glass), var(--glass2));
+      border:1px solid var(--line);
+      box-shadow:
+        0 20px 60px rgba(0,0,0,.45),
+        inset 0 1px 0 rgba(255,255,255,.22);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .card::before{
+      content:"";
+      position:absolute; inset:-40%;
+      background: linear-gradient(120deg, transparent 0 42%, rgba(255,255,255,.20) 50%, transparent 58%);
+      transform: translateX(-30%) rotate(0deg);
+      animation: shine 6.5s ease-in-out infinite;
+      pointer-events:none;
+      opacity:.65;
+    }
+    @keyframes shine{
+      0%{ transform: translateX(-45%) rotate(0deg); }
+      45%{ transform: translateX(20%) rotate(0deg); }
+      100%{ transform: translateX(55%) rotate(0deg); }
+    }
+
+    .inner{
+      padding:32px 28px 26px;
+      display:grid;
+      gap:18px;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      width:fit-content;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.22);
+      background: rgba(0,0,0,.15);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.18);
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .dot{
+      width:10px; height:10px;
+      border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, #fff, rgba(255,255,255,.2) 35%, rgba(0,255,214,.85) 70%);
+      box-shadow: 0 0 18px rgba(0,255,214,.45);
+    }
+
+    h1{
+      margin:0;
+      font-size: clamp(28px, 4vw, 44px);
+      letter-spacing:.2px;
+      text-shadow: 0 2px 20px rgba(0,0,0,.35);
+    }
+
+    p{
+      margin:0;
+      color:var(--muted);
+      font-size:16px;
+      line-height:1.6;
+      max-width:62ch;
+    }
+
+    .row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      margin-top:6px;
+    }
+
+    .btn{
+      appearance:none;
+      border:1px solid rgba(255,255,255,.25);
+      background: linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.06));
+      color:var(--text);
+      padding:10px 14px;
+      border-radius:14px;
+      cursor:pointer;
+      font-weight:600;
+      letter-spacing:.2px;
+      box-shadow:
+        0 10px 25px rgba(0,0,0,.30),
+        inset 0 1px 0 rgba(255,255,255,.24);
+      transition: transform .12s ease, filter .12s ease;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      user-select:none;
+    }
+    .btn:hover{ transform: translateY(-1px); filter: brightness(1.05); }
+    .btn:active{ transform: translateY(0px); filter: brightness(.98); }
+
+    .btn .pill{
+      width:10px; height:10px; border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, #fff, rgba(255,255,255,.2) 35%, var(--accent2) 75%);
+      box-shadow: 0 0 18px rgba(76,161,255,.45);
+    }
+
+    .footer{
+      padding:14px 18px 18px;
+      border-top:1px solid rgba(255,255,255,.12);
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      color:rgba(255,255,255,.55);
+      font-size:12.5px;
+    }
+
+    .glowbar{
+      height:3px;
+      background: linear-gradient(90deg, transparent, rgba(0,255,214,.55), rgba(76,161,255,.55), transparent);
+      filter: blur(.2px);
+      opacity:.9;
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .streaks, .card::before{ animation:none; }
+    }
+
+    /* Clock */
+    .clock-widget{
+      position:absolute;
+      top:14px;
+      right:14px;
+      padding:8px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.22);
+      background: linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.06));
+      box-shadow:
+        0 10px 25px rgba(0,0,0,.30),
+        inset 0 1px 0 rgba(255,255,255,.24);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: var(--text);
+      text-align:right;
+      font-size:12.5px;
+      user-select:none;
+      min-width:170px;
+    }
+    .clock-time{
+      font-weight:700;
+      letter-spacing:.3px;
+      font-size:13.5px;
+      line-height:1.1;
+    }
+    .clock-date{
+      margin-top:2px;
+      color: rgba(255,255,255,.70);
+      font-size:11px;
+      letter-spacing:.2px;
+    }
+
+    /* Countdown pill */
+    .countdown{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      width:fit-content;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.18);
+      background: rgba(0,0,0,.12);
+      color: rgba(255,255,255,.85);
+      font-size:13.5px;
+    }
+    .countdown b{
+      color:#fff;
+      text-shadow: 0 0 10px rgba(76,161,255,.45);
+    }
+  </style>
 </head>
+
 <body>
-  <section class="cid-rW9hQf4kpQ mbr-fullscreen mbr-parallax-background" id="header2-c">
+  <canvas id="bubbles"></canvas>
+  <div class="streaks"></div>
 
-    
+  <div class="wrap">
+    <div class="card" role="status" aria-live="polite">
+      <div class="glowbar"></div>
 
-    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(3, 23, 2);"></div>
+      <div class="clock-widget" aria-label="Live clock">
+        <div class="clock-time" id="clockTime">--:--</div>
+        <div class="clock-date" id="clockDate">---</div>
+      </div>
 
-    <div class="container align-center">
-        <div class="row justify-content-md-center">
-            <div class="mbr-white col-md-10">
-                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">Hey There, Welcome!</h1>
-                
-                <p class="mbr-text pb-3 mbr-fonts-style display-5"><em>Welcome to the official website of Aashik J Krishnan<br>Want to know more about me try clicking the links below<br></em><br> 
-                </p>
-                <div class="mbr-section-btn"><a class="btn btn-md btn-secondary display-4" href="Bio.html"><span class="mbri-user mbr-iconfont mbr-iconfont-btn" style="font-size: 22px;"></span>My Bio</a>  
-                    <a class="btn btn-md btn-black display-4" href="Socials.html"><span class="mbri-globe mbr-iconfont mbr-iconfont-btn" style="font-size: 22px;"></span>Socials</a> <a class="btn btn-md btn-primary display-4" href="Badges.html"><span class="mbri-protect mbr-iconfont mbr-iconfont-btn" style="font-size: 22px;"></span>Badges</a> <a class="btn btn-md btn-success display-4" href="RecRev.html"><span class="mbrib-users mbr-iconfont mbr-iconfont-btn" style="font-size: 22px;"></span>Recomendations</a> <a class="btn btn-md btn-info display-4" href="https://drive.google.com/file/d/1-8W8SqutDstINCSjw6I7con-DK_vzd2X/view?usp=sharing" target="_blank"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn" style="font-size: 23px;"></span>Resume</a></div>
-            </div>
+      <div class="inner">
+        <div class="badge">
+          <span class="dot" aria-hidden="true"></span>
+          Aero Redirect Online
         </div>
+
+        <h1>Redirecting to Aash Gates</h1>
+        <p>
+          This is the old runway. The new terminal is waiting at <strong>aashgates.com</strong>.
+          Auto-jump in a moment.
+        </p>
+
+        <div class="countdown" aria-label="Redirect countdown">
+          Redirecting in <b><span id="sec">4</span></b> seconds…
+        </div>
+
+        <div class="row">
+          <a class="btn" href="https://www.aashgates.com" title="Go now">
+            <span class="pill" aria-hidden="true"></span>
+            Go to aashgates.com now
+          </a>
+          <button class="btn" id="copyBtn" type="button" title="Copy link">
+            <span class="pill" aria-hidden="true"></span>
+            Copy This Page Link
+          </button>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>&copy;<span id="y"></span> Aash Gates</div>
+        <div id="hint">Legacy portal from the c1.biz era → modern domain.</div>
+      </div>
     </div>
-    
-</section>
+  </div>
 
+  <script>
+    // year
+    document.getElementById("y").textContent = new Date().getFullYear();
 
-  <section class="engine"><a href="https://mobirise.info/m">free site design templates</a></section><script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/parallax/jarallax.min.js"></script>
-  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  
-  
-  <input name="animation" type="hidden">
-  </body>
+    // Clock
+    (function(){
+      var timeEl = document.getElementById("clockTime");
+      var dateEl = document.getElementById("clockDate");
+
+      function pad(n){ return (n < 10 ? "0" : "") + n; }
+
+      function tick(){
+        var now = new Date();
+
+        var hh = now.getHours();
+        var mm = now.getMinutes();
+        var ss = now.getSeconds();
+
+        var ampm = hh >= 12 ? "PM" : "AM";
+        var h12 = hh % 12; if (h12 === 0) h12 = 12;
+
+        timeEl.textContent = pad(h12) + ":" + pad(mm) + ":" + pad(ss) + " " + ampm;
+
+        var days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+        var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        dateEl.textContent =
+          days[now.getDay()] + ", " +
+          pad(now.getDate()) + " " +
+          months[now.getMonth()] + " " +
+          now.getFullYear();
+      }
+
+      tick();
+      setInterval(tick, 1000);
+    })();
+
+    // Countdown + JS redirect (backup for meta refresh)
+    (function(){
+      var seconds = 4;
+      var secEl = document.getElementById("sec");
+      var target = "https://www.aashgates.com";
+
+      var t = setInterval(function(){
+        seconds--;
+        if (seconds <= 0){
+          clearInterval(t);
+          secEl.textContent = "0";
+          window.location.href = target;
+          return;
+        }
+        secEl.textContent = String(seconds);
+      }, 1000);
+    })();
+
+    // copy link button
+    document.getElementById("copyBtn").addEventListener("click", function(){
+      var url = location.href;
+      if (navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){
+          document.getElementById("hint").textContent = "Copied: " + url;
+        }, function(){
+          document.getElementById("hint").textContent = "Copy failed. Select & copy manually.";
+        });
+      } else {
+        var ta = document.createElement("textarea");
+        ta.value = url;
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand("copy"); document.getElementById("hint").textContent = "Copied: " + url; }
+        catch(e){ document.getElementById("hint").textContent = "Copy failed. Select & copy manually."; }
+        document.body.removeChild(ta);
+      }
+    });
+
+    // Bubbles
+    (function(){
+      var c = document.getElementById("bubbles");
+      var ctx = c.getContext("2d");
+      var DPR = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
+      var W=0,H=0, bubbles=[];
+
+      function resize(){
+        W = c.width = Math.floor(innerWidth * DPR);
+        H = c.height = Math.floor(innerHeight * DPR);
+        c.style.width = innerWidth + "px";
+        c.style.height = innerHeight + "px";
+      }
+      window.addEventListener("resize", resize);
+      resize();
+
+      function rand(a,b){ return a + Math.random()*(b-a); }
+
+      function makeBubble(){
+        var r = rand(10, 42) * DPR;
+        return {
+          x: rand(0, W),
+          y: rand(H + 50*DPR, H + 400*DPR),
+          r: r,
+          vy: rand(0.25, 1.15) * DPR,
+          vx: rand(-0.15, 0.15) * DPR,
+          a: rand(0.08, 0.18),
+          hue: Math.random() < 0.5 ? 175 : 205
+        };
+      }
+
+      for (var i=0;i<42;i++) bubbles.push(makeBubble());
+
+      function draw(){
+        ctx.clearRect(0,0,W,H);
+
+        var vg = ctx.createRadialGradient(W*0.5,H*0.5,Math.min(W,H)*0.2, W*0.5,H*0.5, Math.max(W,H)*0.7);
+        vg.addColorStop(0, "rgba(0,0,0,0)");
+        vg.addColorStop(1, "rgba(0,0,0,0.25)");
+        ctx.fillStyle = vg;
+        ctx.fillRect(0,0,W,H);
+
+        for (var i=0;i<bubbles.length;i++){
+          var b = bubbles[i];
+          b.y -= b.vy;
+          b.x += b.vx;
+
+          if (b.y < -200*DPR) bubbles[i] = makeBubble();
+
+          var g = ctx.createRadialGradient(b.x - b.r*0.35, b.y - b.r*0.35, b.r*0.1, b.x, b.y, b.r);
+          g.addColorStop(0, "rgba(255,255,255,"+(b.a*1.5)+")");
+          g.addColorStop(0.35, "hsla("+b.hue+", 95%, 72%, "+(b.a*0.7)+")");
+          g.addColorStop(1, "rgba(255,255,255,0)");
+
+          ctx.beginPath();
+          ctx.fillStyle = g;
+          ctx.arc(b.x, b.y, b.r, 0, Math.PI*2);
+          ctx.fill();
+
+          ctx.beginPath();
+          ctx.strokeStyle = "rgba(255,255,255,"+(b.a*0.35)+")";
+          ctx.lineWidth = 1 * DPR;
+          ctx.arc(b.x, b.y, b.r*0.98, 0, Math.PI*2);
+          ctx.stroke();
+        }
+
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+  </script>
+</body>
 </html>
